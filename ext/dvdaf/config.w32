@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("dvdaf", "for dvdaf support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("dvdaf", "enable dvdaf support", "no");
+
+if (PHP_DVDAF != "no") {
+	EXTENSION("dvdaf", "dvdaf.c");
+}
+
